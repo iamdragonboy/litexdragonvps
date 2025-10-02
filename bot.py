@@ -8,14 +8,14 @@ intents = discord.Intents.default()
 intents.message_content = True
 bot = discord.Client(intents=intents)
 
-TOKEN = "YOUR_BOT_TOKEN"  # Replace with your token
+TOKEN = ""  # Replace with your token
 SETTINGS_FILE = "settings.json"
 VPS_USER_FILE = "vps_users.json"
-ADMIN_ID = "1159037240622723092,1135898016134463498"
-DEFAULT_PREFIX = "./"
-FIXED_PASSWORD = "12345678"
+ADMIN_ID = "1294649116575535124,1217402151353978911"
+DEFAULT_PREFIX = "/"
+FIXED_PASSWORD = "litexdragon"
 FIXED_PORT = 2222
-FIXED_USERNAME = "vpsuser"
+FIXED_USERNAME = "root"
 
 def load_settings():
     if os.path.exists(SETTINGS_FILE):
@@ -134,7 +134,7 @@ async def on_message(message):
         await message.channel.send("All VPS users have been deleted.")
 
     elif command.startswith("botinfo"):
-        await message.channel.send("**Bot Info:** Dev: You | Prefix: {}".format(settings.get("prefix")))
+        await message.channel.send("**Bot Info:** Dev: dragonxspider | Prefix: {/}".format(settings.get("prefix")))
 
     elif command.startswith("prefix"):
         options = ['.', '/', '%', '*']
