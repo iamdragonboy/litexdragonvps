@@ -11,7 +11,7 @@ bot = discord.Client(intents=intents)
 TOKEN = ""  # Replace with your token
 SETTINGS_FILE = "settings.json"
 VPS_USER_FILE = "vps_users.json"
-ADMIN_ID = "1294649116575535124,1217402151353978911"
+ADMIN_ID = "1294649116575535124"
 DEFAULT_PREFIX = "/"
 FIXED_PASSWORD = "litexdragon"
 FIXED_PORT = 2222
